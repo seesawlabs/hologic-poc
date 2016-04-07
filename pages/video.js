@@ -5,14 +5,15 @@
  */
 
 import React, { Component } from 'react';
+import Video from '../components/Video';
 
 export default class extends Component {
 
   render() {
     return (
       <div>
-        <h1>Home Page</h1>
-        <a href="/video">Play Video</a>
+        <h1>About Us</h1>
+        <Video />
       </div>
     );
   }
