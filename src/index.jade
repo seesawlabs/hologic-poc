@@ -1,0 +1,25 @@
+doctype html
+html(lang="en" ng-app="titan")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(rel="shortcut icon", href="#{config.favicon}")
+
+    title=config.title
+
+    each paths, base in config.dependencies.css
+      each path in paths
+        link(href="#{base}/#{path}", rel="stylesheet")
+    each path in ['styles']
+      link(href="css/#{path}#{cachebust}.css", rel="stylesheet")
+      
+  body
+    h1.text-center Titan LMS Test
+    
+    .row
+      .col-sm-6.text-center
+        a.btn.btn-primary.btn-lg(href="index1.html") Video JavaScript Framework
+      .col-sm-6.text-center
+        a.btn.btn-primary.btn-lg(href="index2.html") Pure HTML/CSS
+      

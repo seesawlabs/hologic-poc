@@ -1,0 +1,32 @@
+doctype html
+html(lang="en" ng-app="titan")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(rel="shortcut icon", href="#{config.favicon}")
+
+    title=config.title
+
+    each paths, base in config.dependencies.css
+      each path in paths
+        link(href="#{base}/#{path}", rel="stylesheet")
+    each path in ['styles']
+      link(href="css/#{path}#{cachebust}.css", rel="stylesheet")
+      
+  body
+    .container
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            .navbar-brand Pure HTML/CSS Home Page
+            
+          ul.nav.navbar-nav.pull-right
+            li: a(href="index.html") Home
+            li: a(href="index1.html") Javascript Framework Home
+            li.active: a(href="index2.html") Pure HTML/CSS Home Page
+      h1.text-center Pure HTML/CSS Home Page
+      .row
+        .col-sm-6.col-sm-offset-3.text-center
+          a.btn.btn-primary.btn-lg(href="video.html") Video
+      

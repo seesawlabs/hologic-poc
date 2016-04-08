@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest identifier="Titan.Manual.Proof.of.Concept" version="1" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  <organizations default="Hologic">
+    <organization identifier="Hologic">
+      <title>Titan Manual Proof of Concept</title>
+      <item identifier="item_00" identifierref="resource_00">
+        <title>Titan Manual Proof of Concept</title>
+        <adlcp:masteryscore>80</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="resource_00" type="webcontent" href="index.html" adlcp:scormtype="sco">
+      <file href="css/styles.1460062400133.css"/>
+      <file href="index.html"/>
+      <file href="index1.html"/>
+      <file href="index2.html"/>
+      <file href="js/bundle.1460062400133.js"/>
+      <file href="js/env.1460062400133.js"/>
+      <file href="js/templates.1460062400133.js"/>
+      <file href="titan/views/home.view.html"/>
+      <file href="titan/views/layout.view.html"/>
+      <file href="titan/views/video.view.html"/>
+      <file href="vendor/bower/angular/angular.js"/>
+      <file href="vendor/bower/angular/angular.min.js"/>
+      <file href="vendor/bower/angular-animate/angular-animate.js"/>
+      <file href="vendor/bower/angular-animate/angular-animate.min.js"/>
+      <file href="vendor/bower/angular-ui-router/release/angular-ui-router.js"/>
+      <file href="vendor/bower/angular-ui-router/release/angular-ui-router.min.js"/>
+      <file href="vendor/bower/animate.css/animate.css"/>
+      <file href="vendor/bower/animate.css/animate.min.css"/>
+      <file href="video.html"/>
+    </resource>
+  </resources>
+</manifest>
