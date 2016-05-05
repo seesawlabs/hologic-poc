@@ -4,6 +4,7 @@ do (angular) ->
     'app.theme'
     'app.core'
     'app.templates'
-    'ui.router'
+    'ngComponentRouter'
     'ngAnimate'
   ]
+  .value '$routerRootComponent', 'app'

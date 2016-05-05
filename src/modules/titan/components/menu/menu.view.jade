@@ -1,0 +1,19 @@
+.main-menu
+  .row
+    .col-sm-3(ng-repeat="item in vm.items" class="menu-item-{{item.name}}")
+      .menu-item(ng-link="[item.name]")
+        .large-icon.yellow
+          i.fa(class="fa-{{item.icon}}")
+        .item-label(ng-bind="item.label")
+        h3(ng-bind="item.name")
+        p(ng-bind="item.description")
+  ng-outlet
+  //- 
+  //- footer
+  //-   .row
+  //-     .col-sm-4
+  //-       a(ng-link="['help']") Help
+  //-     .col-sm-4
+  //-       a(ng-link="['resources']") Resources
+  //-     .col-sm-4
+  //-       a(ng-link="['support']") Support
