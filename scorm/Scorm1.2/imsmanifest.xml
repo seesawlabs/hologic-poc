@@ -15,24 +15,60 @@
   </organizations>
   <resources>
     <resource identifier="resource_00" type="webcontent" href="index.html" adlcp:scormtype="sco">
-      <file href="css/styles.1460062400133.css"/>
+      <file href="css/styles.1462204810002.css"/>
       <file href="index.html"/>
       <file href="index1.html"/>
       <file href="index2.html"/>
-      <file href="js/bundle.1460062400133.js"/>
-      <file href="js/env.1460062400133.js"/>
-      <file href="js/templates.1460062400133.js"/>
+      <file href="js/bundle.1462204810002.js"/>
+      <file href="js/env.1462204810002.js"/>
+      <file href="js/templates.1462204810002.js"/>
       <file href="titan/views/home.view.html"/>
       <file href="titan/views/layout.view.html"/>
       <file href="titan/views/video.view.html"/>
+      <file href="vendor/bower/angular/.bower.json"/>
+      <file href="vendor/bower/angular/README.md"/>
+      <file href="vendor/bower/angular/angular-csp.css"/>
       <file href="vendor/bower/angular/angular.js"/>
       <file href="vendor/bower/angular/angular.min.js"/>
+      <file href="vendor/bower/angular/angular.min.js.gzip"/>
+      <file href="vendor/bower/angular/angular.min.js.map"/>
+      <file href="vendor/bower/angular/bower.json"/>
+      <file href="vendor/bower/angular/index.js"/>
+      <file href="vendor/bower/angular/package.json"/>
+      <file href="vendor/bower/angular-animate/.bower.json"/>
+      <file href="vendor/bower/angular-animate/README.md"/>
       <file href="vendor/bower/angular-animate/angular-animate.js"/>
       <file href="vendor/bower/angular-animate/angular-animate.min.js"/>
+      <file href="vendor/bower/angular-animate/angular-animate.min.js.map"/>
+      <file href="vendor/bower/angular-animate/bower.json"/>
+      <file href="vendor/bower/angular-animate/index.js"/>
+      <file href="vendor/bower/angular-animate/package.json"/>
+      <file href="vendor/bower/angular-ui-router/.bower.json"/>
+      <file href="vendor/bower/angular-ui-router/CHANGELOG.md"/>
+      <file href="vendor/bower/angular-ui-router/CONTRIBUTING.md"/>
+      <file href="vendor/bower/angular-ui-router/LICENSE"/>
+      <file href="vendor/bower/angular-ui-router/README.md"/>
+      <file href="vendor/bower/angular-ui-router/bower.json"/>
       <file href="vendor/bower/angular-ui-router/release/angular-ui-router.js"/>
       <file href="vendor/bower/angular-ui-router/release/angular-ui-router.min.js"/>
+      <file href="vendor/bower/angular-ui-router/src/common.js"/>
+      <file href="vendor/bower/angular-ui-router/src/resolve.js"/>
+      <file href="vendor/bower/angular-ui-router/src/state.js"/>
+      <file href="vendor/bower/angular-ui-router/src/stateDirectives.js"/>
+      <file href="vendor/bower/angular-ui-router/src/stateFilters.js"/>
+      <file href="vendor/bower/angular-ui-router/src/templateFactory.js"/>
+      <file href="vendor/bower/angular-ui-router/src/urlMatcherFactory.js"/>
+      <file href="vendor/bower/angular-ui-router/src/urlRouter.js"/>
+      <file href="vendor/bower/angular-ui-router/src/view.js"/>
+      <file href="vendor/bower/angular-ui-router/src/viewDirective.js"/>
+      <file href="vendor/bower/angular-ui-router/src/viewScroll.js"/>
+      <file href="vendor/bower/animate.css/.bower.json"/>
+      <file href="vendor/bower/animate.css/animate-config.json"/>
       <file href="vendor/bower/animate.css/animate.css"/>
       <file href="vendor/bower/animate.css/animate.min.css"/>
+      <file href="vendor/bower/animate.css/bower.json"/>
+      <file href="vendor/bower/animate.css/gulpfile.js"/>
+      <file href="vendor/bower/animate.css/package.json"/>
       <file href="video.html"/>
     </resource>
   </resources>
