@@ -33,7 +33,8 @@ do (angular)->
     @$inject: ['MainMenuService']
     constructor: (@mainmenu)->
     items: []
-    $routerOnActivate: ->
+    $routerOnActivate: (next, previous) ->
+      console.log next.params.name
       @mainmenu
         .getItems()
         .then (@items)=>

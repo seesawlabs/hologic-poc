@@ -1,7 +1,7 @@
 .main-menu
   .row
     .col-sm-3(ng-repeat="item in vm.items" class="menu-item-{{item.name}}")
-      .menu-item(ng-link="[item.name]")
+      .menu-item(ng-link="['MenuItem', {name: item.name}]")
         .large-icon.yellow
           i.fa(class="fa-{{item.icon}}")
         .item-label(ng-bind="item.label")

@@ -8,7 +8,7 @@ do (angular)->
         component: 'home'
         useAsDefault: true
       ,
-        path: '/menu'
-        name: 'Menu'
-        component: 'menu'
+        path: '/menus/...'
+        name: 'Menus'
+        component: 'menus'
       ]
