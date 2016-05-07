@@ -33,30 +33,29 @@ do (angular)->
     @$inject: ['MainMenuService']
     constructor: (@mainmenu)->
     items: []
-    $routerOnActivate: (next, previous) ->
-      console.log next.params.name
+    $routerOnActivate: () ->
       @mainmenu
         .getItems()
         .then (@items)=>
 
-    @$routeConfig: [
-      path: "/"
-      path: '/overview'
-      name: 'Overview'
-      component: 'overview'
-    ,
-      path: '/essentials'
-      name: 'Essentials'
-      component: 'essentials'
-    ,
-      path: '/administration'
-      name: 'Administration'
-      component: 'administration'
-    ,
-      path: '/on-demand'
-      name: 'OnDemand'
-      component: 'onDemand'
-    ]
+    # @$routeConfig: [
+    #   path: "/"
+    #   path: '/overview'
+    #   name: 'Overview'
+    #   component: 'overview'
+    # ,
+    #   path: '/essentials'
+    #   name: 'Essentials'
+    #   component: 'essentials'
+    # ,
+    #   path: '/administration'
+    #   name: 'Administration'
+    #   component: 'administration'
+    # ,
+    #   path: '/on-demand'
+    #   name: 'OnDemand'
+    #   component: 'onDemand'
+    # ]
       # @items.map (item)->
       #   path: "/#{item.name}"
       #   name: item.name
