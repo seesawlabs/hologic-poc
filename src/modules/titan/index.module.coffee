@@ -8,3 +8,9 @@ do (angular) ->
     'ngAnimate'
   ]
   .value '$routerRootComponent', 'app'
+  .filter 'trustAsResourceUrl', [
+      '$sce'
+      ($sce) ->
+        (val) ->
+          $sce.trustAsResourceUrl val
+   ]

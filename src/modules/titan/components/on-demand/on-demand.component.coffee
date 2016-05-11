@@ -4,16 +4,40 @@ do (angular)->
     constructor: (@$q)->
     data: [
       name: 'Setup'
-      video: '160640015'
+      videos: [
+        name: 'Ruler'
+        videoId: '160640015'
+      ,
+        name: 'Patient Info Display'
+        videoId: '165007400'
+      ]
     ,
       name: 'Login/Logout'
-      video: '160640015'
+      videos: [
+        name: 'Magnify and Zoom'
+        videoId: '160640015'
+      ,
+        name: 'Window/Level'
+        videoId: '165007400'
+      ]
     ,
       name: 'Patient Information'
-      video: '160640015'
+      videos: [
+        name: 'Enhanced Visualization'
+        videoId: '160640015'
+      ,
+        name: 'Display'
+        videoId: '165007400'
+      ]
     ,
       name: 'Specimen'
-      video: '160640015'
+      videos: [
+        name: 'Ruler'
+        videoId: '160640015'
+      ,
+        name: 'Patient Info Display'
+        videoId: '165007400'
+      ]
     ]
 
     getItems: ->
@@ -33,5 +57,6 @@ do (angular)->
     .component 'onDemand',
       templateUrl: 'titan/components/on-demand/on-demand.view.html'
       controller: 'OnDemandController as vm'
+
     .controller 'OnDemandController', OnDemandController
     .service 'VideoMenuService', VideoMenuService

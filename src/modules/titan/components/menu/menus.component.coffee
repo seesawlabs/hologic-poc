@@ -10,4 +10,10 @@
         path: '/:name'
         name: 'MenuItem'
         component: 'menuItem'
+
+      ,
+        path: 'video/:videoId'
+        name: 'TridentVideo'
+        component: 'tridentVideo'
+
       ]
