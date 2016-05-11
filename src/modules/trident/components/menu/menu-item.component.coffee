@@ -3,8 +3,8 @@ do (angular)->
     $routerOnActivate: (next, previous) ->
       @name = next.params.name
 
-  angular.module 'titan'
+  angular.module 'trident'
     .component 'menuItem',
-      templateUrl: 'titan/components/menu/menu-item.view.html'
+      templateUrl: 'trident/components/menu/menu-item.view.html'
       controller: 'MenuItemController as vm'
     .controller 'MenuItemController', MenuItemController

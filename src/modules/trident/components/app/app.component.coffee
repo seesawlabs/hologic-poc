@@ -1,7 +1,7 @@
 do (angular)->
-  angular.module 'titan'
+  angular.module 'trident'
     .component 'app',
-      templateUrl: 'titan/components/app/app.view.html'
+      templateUrl: 'trident/components/app/app.view.html'
       $routeConfig: [
         path: '/home'
         name: 'Home'

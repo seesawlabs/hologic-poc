@@ -53,9 +53,9 @@ do (angular)->
         .getItems()
         .then (@items)=>
 
-  angular.module 'titan'
+  angular.module 'trident'
     .component 'onDemand',
-      templateUrl: 'titan/components/on-demand/on-demand.view.html'
+      templateUrl: 'trident/components/on-demand/on-demand.view.html'
       controller: 'OnDemandController as vm'
 
     .controller 'OnDemandController', OnDemandController

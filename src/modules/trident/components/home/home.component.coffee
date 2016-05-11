@@ -3,7 +3,7 @@ do (angular)->
     @$inject: []
     controller: ->
 
-  angular.module 'titan'
+  angular.module 'trident'
     .component 'home',
-      templateUrl: 'titan/components/home/home.view.html'
+      templateUrl: 'trident/components/home/home.view.html'
       controller: HomeController

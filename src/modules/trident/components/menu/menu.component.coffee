@@ -4,21 +4,25 @@ do (angular)->
     constructor: (@$q)->
     data: [
       name: 'overview'
+      component: 'Overview'
       icon: 'refresh'
       description: 'Review the Trident System features and benefits'
       label: 'For the trident system user'
     ,
       name: 'essentials'
+      component: 'Essentials'
       icon: 'check-square-o'
       description: 'Learn how to successfully operate the Trident System'
       label: 'For the first-time learner'
     ,
       name: 'administration'
+      component: 'Administration'
       icon: 'gears'
       description: 'Learn about the Trident System administration features'
       label: 'For the system manager'
     ,
       name: 'on-demand'
+      component: 'OnDemand'
       icon: 'play-circle-o'
       description: 'Experience short, discrete Trident System lessons'
       label: 'For the on-demand learner'
@@ -61,9 +65,9 @@ do (angular)->
       #   name: item.name
       #   component: item.name
 
-  angular.module 'titan'
+  angular.module 'trident'
     .component 'menu',
-      templateUrl: 'titan/components/menu/menu.view.html'
+      templateUrl: 'trident/components/menu/menu.view.html'
       controller: 'MenuController as vm'
       # $routeConfig: [
       #   path: "/"

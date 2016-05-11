@@ -4,8 +4,8 @@ do (angular)->
       @videoId = next.params.videoId
       @videoURL = "https://player.vimeo.com/video/#{@videoId}"
 
-  angular.module 'titan'
+  angular.module 'trident'
     .component 'tridentVideo',
-      templateUrl: 'titan/components/trident-video/trident-video.view.html'
+      templateUrl: 'trident/components/trident-video/trident-video.view.html'
       controller: 'TridentVideoController as vm'
     .controller 'TridentVideoController', TridentVideoController

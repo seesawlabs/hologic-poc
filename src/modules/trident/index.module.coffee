@@ -1,6 +1,6 @@
 do (angular) ->
 
-  angular.module 'titan', [
+  angular.module 'trident', [
     'app.theme'
     'app.core'
     'app.templates'

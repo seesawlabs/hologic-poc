@@ -6,5 +6,5 @@ do (angular)->
 
   trustAsResourceUrl.$inject = ['$sce']
 
-  angular.module 'titan'
+  angular.module 'trident'
     .filter 'trustAsResourceUrl', trustAsResourceUrl
