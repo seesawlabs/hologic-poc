@@ -2,30 +2,31 @@ do (angular)->
   class MainMenuService
     @$inject: ['$q']
     constructor: (@$q)->
+    selectedOption: undefined
     data: [
       name: 'overview'
-      component: 'Overview'
       icon: 'refresh'
       description: 'Review the Trident System features and benefits'
       label: 'For the trident system user'
+      selected: false
     ,
       name: 'essentials'
-      component: 'Essentials'
       icon: 'check-square-o'
       description: 'Learn how to successfully operate the Trident System'
       label: 'For the first-time learner'
+      selected: false
     ,
       name: 'administration'
-      component: 'Administration'
       icon: 'gears'
       description: 'Learn about the Trident System administration features'
       label: 'For the system manager'
+      selected: false
     ,
       name: 'on-demand'
-      component: 'OnDemand'
       icon: 'play-circle-o'
       description: 'Experience short, discrete Trident System lessons'
       label: 'For the on-demand learner'
+      selected: false
     ]
 
     getItems: ->
@@ -33,59 +34,30 @@ do (angular)->
       deferred.resolve(@data)
       deferred.promise
 
+    getSelectedOption: ()->
+      return @selectedOption
+
+    setSelectedOption: (item)->
+      @selectedOption = item
+
   class MenuController
     @$inject: ['MainMenuService']
-    constructor: (@mainmenu)->
     items: []
+
+    constructor: (@mainmenu)->
     $routerOnActivate: () ->
       @mainmenu
         .getItems()
         .then (@items)=>
 
-    # @$routeConfig: [
-    #   path: "/"
-    #   path: '/overview'
-    #   name: 'Overview'
-    #   component: 'overview'
-    # ,
-    #   path: '/essentials'
-    #   name: 'Essentials'
-    #   component: 'essentials'
-    # ,
-    #   path: '/administration'
-    #   name: 'Administration'
-    #   component: 'administration'
-    # ,
-    #   path: '/on-demand'
-    #   name: 'OnDemand'
-    #   component: 'onDemand'
-    # ]
-      # @items.map (item)->
-      #   path: "/#{item.name}"
-      #   name: item.name
-      #   component: item.name
+    selectOption: (item)->
+      @mainmenu.setSelectedOption(item)
+
+
 
   angular.module 'trident'
     .component 'menu',
       templateUrl: 'trident/components/menu/menu.view.html'
       controller: 'MenuController as vm'
-      # $routeConfig: [
-      #   path: "/"
-      #   path: '/overview'
-      #   name: 'Overview'
-      #   component: 'overview'
-      # ,
-      #   path: '/essentials'
-      #   name: 'Essentials'
-      #   component: 'essentials'
-      # ,
-      #   path: '/administration'
-      #   name: 'Administration'
-      #   component: 'administration'
-      # ,
-      #   path: '/on-demand'
-      #   name: 'OnDemand'
-      #   component: 'onDemand'
-      # ]
     .controller 'MenuController', MenuController
     .service 'MainMenuService', MainMenuService
