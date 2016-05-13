@@ -8,25 +8,21 @@ do (angular)->
       icon: 'refresh'
       description: 'Review the Trident System features and benefits'
       label: 'For the trident system user'
-      selected: false
     ,
       name: 'essentials'
       icon: 'check-square-o'
       description: 'Learn how to successfully operate the Trident System'
       label: 'For the first-time learner'
-      selected: false
     ,
       name: 'administration'
       icon: 'gears'
       description: 'Learn about the Trident System administration features'
       label: 'For the system manager'
-      selected: false
     ,
       name: 'on-demand'
       icon: 'play-circle-o'
       description: 'Experience short, discrete Trident System lessons'
       label: 'For the on-demand learner'
-      selected: false
     ]
 
     getItems: ->
