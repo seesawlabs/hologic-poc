@@ -5,24 +5,24 @@ do (angular)->
     selectedOption: undefined
     data: [
       name: 'overview'
-      icon: 'refresh'
-      description: 'Review the Trident System features and benefits'
-      label: 'For the trident system user'
+      # icon: 'refresh'
+      # description: 'Review the Trident System features and benefits'
+      # label: 'For the trident system user'
     ,
       name: 'essentials'
-      icon: 'check-square-o'
-      description: 'Learn how to successfully operate the Trident System'
-      label: 'For the first-time learner'
+      # icon: 'check-square-o'
+      # description: 'Learn how to successfully operate the Trident System'
+      # label: 'For the first-time learner'
     ,
       name: 'administration'
-      icon: 'gears'
-      description: 'Learn about the Trident System administration features'
-      label: 'For the system manager'
+      # icon: 'gears'
+      # description: 'Learn about the Trident System administration features'
+      # label: 'For the system manager'
     ,
       name: 'on-demand'
-      icon: 'play-circle-o'
-      description: 'Experience short, discrete Trident System lessons'
-      label: 'For the on-demand learner'
+      # icon: 'play-circle-o'
+      # description: 'Experience short, discrete Trident System lessons'
+      # label: 'For the on-demand learner'
     ]
 
     getItems: ->
