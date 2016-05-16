@@ -22,7 +22,7 @@ cachebust = if env isnt 'prod' then ".#{Date.now()}" else ""
 
 paths =
   app: ['src/modules/**/*.coffee', '!src/modules/**/test/**']
-  styles: 'src/modules/**/*.scss'
+  styles: ['src/modules/**/*.scss', 'src/modules/**/*.sass']
   templates: ['src/*.jade', 'src/modules/**/*.jade']
   assets: [
     'src/assets/**/*'
@@ -116,7 +116,7 @@ gulp.task 'ng-env', ->
 
 gulp.task 'sass', ->
   sourcemaps = plugins().sourcemaps
-  gulp.src [paths.styles]
+  gulp.src paths.styles
     .pipe plugins().plumber()
     .pipe gulpif(env isnt 'prod', sourcemaps.init())
     .pipe plugins().sass()

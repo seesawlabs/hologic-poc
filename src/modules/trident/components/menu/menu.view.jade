@@ -1,13 +1,5 @@
 .main-menu
-  //- .row
-  //-   .col-sm-3(ng-repeat="item in vm.items" class="menu-item-{{item.name}}")
-  //-     .menu-item(ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)")
-  //-       .large-icon.yellow
-  //-         i.fa(class="fa-{{item.icon}}")
-  //-       .item-label(ng-bind="item.label")
-  //-       h3(ng-bind="item.name")
-  //-       p(ng-bind="item.description")
-  nav.navbar.navbar-default.navbar-fixed-top
+  nav.navbar.navbar-default.navbar-fixed-top.trident-menu
      .container
        .navbar-header
          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -17,34 +9,16 @@
            span.icon-bar
        #navbar.navbar-collapse.collapse
          ul.nav.navbar-nav
-          li(ng-repeat="item in vm.items" class="menu-item-{{item.name}}")
-            a(ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)") {{item.name}}
+          li(ng-repeat="item in vm.items" class="trident-menu-item-{{item.name}}")
+            a(ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)") {{item.label}}
          
-          //-  li.active
-          //-    a(href='#') Home
-          //-  li
-          //-    a(href='#about') About
-          //-  li
-          //-    a(href='#contact') Contact
-
          ul.nav.navbar-nav.navbar-right
            li
-             a(href='../navbar/') Default
+             a(href='#') Resources
            li
-             a(href='../navbar-static-top/') Static top
+             a(href='#/') Support
            li.active
-             a(href='./')
-               | Fixed top 
+             a(href='/#')
+               | Help
                span.sr-only (current)
-       // /.nav-collapse
-
   ng-outlet
-  //- 
-  //- footer
-  //-   .row
-  //-     .col-sm-4
-  //-       a(ng-link="['help']") Help
-  //-     .col-sm-4
-  //-       a(ng-link="['resources']") Resources
-  //-     .col-sm-4
-  //-       a(ng-link="['support']") Support

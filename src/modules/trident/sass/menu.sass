@@ -1,6 +1,34 @@
 //Namescape to encasulape the css
 $trident: 'trident-'
+//Menu Colors
+$overview: #FFB700
+$essentials: #AB17AB
+$administration: #00C700
+$on-demand: #00B5EF
 
+$main-menu: #17206D
+
+$colDefault: #fff
+$colHighlight: #fff
+
+
+.#{$trident}menu
+  background-color: $main-menu
+  .navbar-nav
+    > li
+      > a
+        color: $colDefault
+        &:hover, &:focus
+          color: $colHighlight
 
 .#{$trident}menu-item-overview
-  background-color: green
+  background-color: $overview
+
+.#{$trident}menu-item-essentials
+  background-color: $essentials
+
+.#{$trident}menu-item-administration
+  background-color: $administration
+
+.#{$trident}menu-item-on-demand
+  background-color: $on-demand

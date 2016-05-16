@@ -7,22 +7,22 @@ do (angular)->
       name: 'overview'
       # icon: 'refresh'
       # description: 'Review the Trident System features and benefits'
-      # label: 'For the trident system user'
+      label: 'Overview'
     ,
       name: 'essentials'
       # icon: 'check-square-o'
       # description: 'Learn how to successfully operate the Trident System'
-      # label: 'For the first-time learner'
+      label: 'Essentials'
     ,
       name: 'administration'
       # icon: 'gears'
       # description: 'Learn about the Trident System administration features'
-      # label: 'For the system manager'
+      label: 'Administration'
     ,
       name: 'on-demand'
       # icon: 'play-circle-o'
       # description: 'Experience short, discrete Trident System lessons'
-      # label: 'For the on-demand learner'
+      label: 'On Demand'
     ]
 
     getItems: ->
