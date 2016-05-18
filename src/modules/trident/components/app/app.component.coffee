@@ -8,7 +8,11 @@ do (angular)->
         component: 'home'
         useAsDefault: true
       ,
-        path: '/menus/...'
-        name: 'Menus'
-        component: 'menus'
+        path: 'view/:name'
+        name: 'Static'
+        component: 'static'
+      ,
+        path: 'video/:videoId'
+        name: 'TridentVideo'
+        component: 'tridentVideo'
       ]

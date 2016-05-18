@@ -20,4 +20,5 @@ module.exports =
         'angular-animate/angular-animate.js'
         'angular-component-router/angular_1_router.js'
         'angular-component-router/ng_route_shim.js'
+        'jquery/dist/jquery.min.js'
       ]

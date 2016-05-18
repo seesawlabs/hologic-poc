@@ -16,7 +16,6 @@ html(lang="en" ng-app="trident")
       
   body(ng-app="titan")
     app
-    
     each paths, base in config.dependencies.js
       each path in paths
         script(src="#{base}/#{path}")

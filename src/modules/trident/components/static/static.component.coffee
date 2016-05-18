@@ -3,7 +3,7 @@ do (angular)->
   routeTemplateURL = (@mainmenu, $location)->
     item = @mainmenu.getSelectedOption()
     if !item
-      root = '/menus/'
+      root = '/view/'
       template = $location.path()
       template = template.replace(root, '')
     else
