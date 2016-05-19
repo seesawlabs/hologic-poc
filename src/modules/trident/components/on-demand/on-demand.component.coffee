@@ -5,10 +5,19 @@ do (angular)->
     data: [
       name: 'Setup'
       videos: [
-        name: 'Ruler'
+        name: 'Basic unit components'
         videoId: '160640015'
       ,
-        name: 'Patient Info Display'
+        name: 'X-ray cabinet component'
+        videoId: '165007400'
+      ,
+        name: 'Cabinet controls and indicators'
+        videoId: '165007400'
+      ,
+        name: 'Multi-up Display'
+        videoId: '165007400'
+      ,
+        name: 'Setting up the Trident System'
         videoId: '165007400'
       ]
     ,
@@ -52,6 +61,10 @@ do (angular)->
       @videomenu
         .getItems()
         .then (@items)=>
+
+    displayMenu: (item)->
+      item.displaySubMenu = !item.displaySubMenu
+
 
   angular.module 'trident'
     .component 'onDemand',

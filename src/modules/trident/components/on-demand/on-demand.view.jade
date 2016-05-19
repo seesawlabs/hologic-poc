@@ -1,9 +1,9 @@
 .on-demand
   ul.list-group
     li.list-group-item(ng-repeat="item in vm.items")
-      a(ng-bind="item.name")
-      ul.list-group
+      a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
+      ul.list-group.animated(ng-show="item.displaySubMenu")
         li(ng-repeat="video in item.videos" ng-link="['TridentVideo', {videoId: video.videoId}]" class="list-group-item")
-          a(ng-bind="video.name" )
+          a(ng-bind="video.name")
       
   ng-outlet
