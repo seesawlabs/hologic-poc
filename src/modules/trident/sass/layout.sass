@@ -10,6 +10,8 @@ body
     background-image: url('/assets/img/bg-yellow.jpg')
   &.#{$trident}on-demand
     background-image: url('/assets/img/bg-lightblue.jpg')
+  &.#{$trident}video
+    background-image: url('/assets/img/bg-lightblue.jpg')
 
 
 .#{$trident}separator
@@ -19,13 +21,25 @@ body
   overflow: hidden
   margin-bottom: 10px
 
-
-
 .on-demand
+  .on-demand-menu
+    .list-group-item
+      background-color: #0097C7
+      margin-bottom: 2px
+      a
+        font-size: 16px
+        color: white
+
+
   .list-group-item
     background-color: transparent
     border: none
     a
+      cursor: pointer
       font-size: 20px
       color: #009BCD
       text-transform: capitalize
+
+
+.fa-chevron-right
+  color: white

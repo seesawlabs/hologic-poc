@@ -6,7 +6,10 @@ do (angular) ->
       root = '/view/'
       template = $location.path()
       template = template.replace(root, '')
-      $rootScope.template = template
+
+      # Removing last of the path.
+      if template.indexOf('/') isnt -1
+        template = template.substring 0, template.indexOf '/'
 
       jQuery 'body'
         .removeClass()

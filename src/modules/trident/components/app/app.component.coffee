@@ -12,7 +12,7 @@ do (angular)->
         name: 'Static'
         component: 'static'
       ,
-        path: 'video/:videoId'
+        path: 'view/video/:videoId'
         name: 'TridentVideo'
         component: 'tridentVideo'
       ]

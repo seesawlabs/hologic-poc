@@ -6,46 +6,46 @@ do (angular)->
       name: 'Setup'
       videos: [
         name: 'Basic unit components'
-        videoId: '160640015'
+        videoId: '164620633'
       ,
         name: 'X-ray cabinet component'
-        videoId: '165007400'
+        videoId: '164620633'
       ,
         name: 'Cabinet controls and indicators'
-        videoId: '165007400'
+        videoId: '164620633'
       ,
         name: 'Multi-up Display'
-        videoId: '165007400'
+        videoId: '164620633'
       ,
         name: 'Setting up the Trident System'
-        videoId: '165007400'
+        videoId: '164620633'
       ]
     ,
       name: 'Login/Logout'
       videos: [
         name: 'Magnify and Zoom'
-        videoId: '160640015'
+        videoId: '164620633'
       ,
         name: 'Window/Level'
-        videoId: '165007400'
+        videoId: '164620633'
       ]
     ,
       name: 'Patient Information'
       videos: [
         name: 'Enhanced Visualization'
-        videoId: '160640015'
+        videoId: '164620633'
       ,
         name: 'Display'
-        videoId: '165007400'
+        videoId: '164620633'
       ]
     ,
       name: 'Specimen'
       videos: [
         name: 'Ruler'
-        videoId: '160640015'
+        videoId: '164620633'
       ,
         name: 'Patient Info Display'
-        videoId: '165007400'
+        videoId: '164620633'
       ]
     ]
 
@@ -58,13 +58,13 @@ do (angular)->
     @$inject: ['VideoMenuService']
     items: []
     constructor: (@videomenu)->
+
       @videomenu
         .getItems()
         .then (@items)=>
 
     displayMenu: (item)->
-      item.displaySubMenu = !item.displaySubMenu
-
+      @selectedItem = item
 
   angular.module 'trident'
     .component 'onDemand',
