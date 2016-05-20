@@ -1,5 +1,7 @@
-div.trident-separator
-  h1.pull-left On-demand
-div.clearfix
-.embed-responsive.embed-responsive-16by9
-  iframe.embed-responsive-item(ng-src="{{ vm.videoURL | trustAsResourceUrl }}" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
+.row
+  .col-md-8
+    div.trident-separator
+      h1.pull-left On-demand
+    div.clearfix
+    .embed-responsive.embed-responsive-16by9
+      iframe.embed-responsive-item(ng-src="{{ vm.videoURL | trustAsResourceUrl }}" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
