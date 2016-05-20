@@ -22,3 +22,6 @@ module.exports =
         'angular-component-router/ng_route_shim.js'
         'jquery/dist/jquery.min.js'
       ]
+      '': [
+        '/maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
+      ]

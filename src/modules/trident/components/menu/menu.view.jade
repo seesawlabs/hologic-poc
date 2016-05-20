@@ -11,13 +11,8 @@
          ul.nav.navbar-nav
           li(ng-repeat="item in vm.items" class="trident-menu-item-{{item.name}}")
             a(ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)") {{item.label}}
-         
+
          ul.nav.navbar-nav.navbar-right
-           li
-             a(href='#') Resources
-           li
-             a(href='#/') Support
-           li.active
-             a(href='/#')
-               | Help
-               span.sr-only (current)
+          li(ng-repeat="about in vm.about")
+            a(ng-link="['Static', {name: about.name}]" ng-click="vm.selectOption(about)")  {{about.label}}
+            

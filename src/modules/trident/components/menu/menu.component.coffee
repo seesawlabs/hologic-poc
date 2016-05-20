@@ -17,9 +17,25 @@ do (angular)->
       label: 'On Demand'
     ]
 
+    about: [
+      name: 'resources'
+      label: 'Resources'
+    ,
+      name: 'support'
+      label: 'Support'
+    ,
+      name: 'help'
+      label: 'Help'
+    ]
+
     getItems: ->
       deferred = @$q.defer()
       deferred.resolve(@data)
+      deferred.promise
+
+    getAbout: ->
+      deferred = @$q.defer()
+      deferred.resolve(@about)
       deferred.promise
 
     getSelectedOption: ()->
@@ -31,12 +47,18 @@ do (angular)->
   class MenuController
     @$inject: ['MainMenuService']
     items: []
+    about: []
 
     constructor: (@mainmenu)->
     $onInit: () ->
       @mainmenu
         .getItems()
         .then (@items)=>
+
+      @mainmenu
+        .getAbout()
+        .then (@about)=>
+          console.log @about
 
     selectOption: (item)->
       @mainmenu.setSelectedOption(item)
