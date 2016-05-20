@@ -3,13 +3,13 @@ div.trident-separator
 .row
   .on-demand
       .col-md-4
-        ul.list-group.pull-left
+        ul.list-group
           li.list-group-item(ng-repeat="item in vm.items")
             a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
           
       .col-md-6
         ul.list-group.on-demand-menu
-          li(ng-repeat="video in vm.selectedItem.videos" ng-link="['TridentVideo', {videoId: video.videoId}]" class="list-group-item")
+          li.list-group-item(ng-repeat="video in vm.selectedItem.videos" ng-link="['TridentVideo', {videoId: video.videoId}]")
             a(ng-bind="video.name")
             i.fa.pull-right.fa-chevron-right(aria-hidden="true")
       
