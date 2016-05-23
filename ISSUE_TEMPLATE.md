@@ -1,4 +1,4 @@
-**Issue: ** 
-**URL: **
-**Screenshot: **
-**Mockup Example: **
+**Issue:**  
+**URL:**  
+**Screenshot:**  
+**Mockup Example:**  
