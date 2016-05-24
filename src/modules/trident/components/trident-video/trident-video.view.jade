@@ -1,7 +1,8 @@
-.row
-  .col-md-8
-    div.trident-separator
-      h1.pull-left On-demand
-    div.clearfix
-    .embed-responsive.embed-responsive-16by9
-      iframe.embed-responsive-item(ng-src="{{ vm.videoURL | trustAsResourceUrl }}" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
+div.trident-separator
+  div.container
+      h3.pull-left {{vm.selectedVideo.name}}
+div.container
+  .row
+    .col-md-12
+      .embed-responsive.embed-responsive-16by9
+        iframe.embed-responsive-item(ng-src="{{ vm.videoURL | trustAsResourceUrl }}" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")

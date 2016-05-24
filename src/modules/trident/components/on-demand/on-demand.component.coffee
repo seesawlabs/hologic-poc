@@ -178,7 +178,6 @@ do (angular)->
     @$inject: ['VideoMenuService']
     items: []
     constructor: (@videomenu)->
-
       @videomenu
         .getItems()
         .then (@items)=>
@@ -190,6 +189,5 @@ do (angular)->
     .component 'onDemand',
       templateUrl: 'trident/components/on-demand/on-demand.view.html'
       controller: 'OnDemandController as vm'
-
     .controller 'OnDemandController', OnDemandController
     .service 'VideoMenuService', VideoMenuService

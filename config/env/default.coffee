@@ -24,4 +24,5 @@ module.exports =
       ]
       '': [
         '/maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
+        '/cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js'
       ]
