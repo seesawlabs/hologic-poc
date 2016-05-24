@@ -21,6 +21,13 @@ html(lang="en" ng-app="trident")
         script(src="#{base}/#{path}")
     each path in ['bundle', 'templates', 'env']
         script(src="js/#{path}#{cachebust}.js")
+        
+    div(id="preload")
+     img(src="/assets/img/bg-green.jpg" width="1" height="1") 
+     img(src="/assets/img/bg-purple.jpg" width="1" height="1")
+     img(src="/assets/img/bg-yellow.jpg" width="1" height="1") 
+     img(src="/assets/img/bg-lightblue.jpg" width="1" height="1") 
+
 
     if (env == 'local')
       script
