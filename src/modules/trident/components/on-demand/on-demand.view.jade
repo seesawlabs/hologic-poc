@@ -1,16 +1,19 @@
 div.trident-separator
-  h1.pull-left On-demand
-.row
-  .on-demand
-      .col-md-4
-        ul.list-group
-          li.list-group-item(ng-repeat="item in vm.items")
-            a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
-          
-      .col-md-6
-        ul.list-group.on-demand-menu
-          li.list-group-item(ng-repeat="video in vm.selectedItem.videos" ng-link="['TridentVideo', {videoId: video.videoId}]")
-              a(ng-bind="video.name")
-              i.fa.fa-chevron-right.arrow-item(aria-hidden="true")
-      
-  ng-outlet
+  div.container
+    h1.pull-left On-demand
+    
+div.container
+  .row
+    .on-demand
+        .col-md-4
+          ul.list-group
+            li.list-group-item(ng-repeat="item in vm.items")
+              a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
+            
+        .col-md-6
+          ul.list-group.on-demand-menu
+            li.list-group-item(ng-repeat="video in vm.selectedItem.videos" ng-link="['TridentVideo', {videoId: video.videoId}]")
+                a(ng-bind="video.name")
+                i.fa.fa-chevron-right.arrow-item(aria-hidden="true")
+        
+    ng-outlet
