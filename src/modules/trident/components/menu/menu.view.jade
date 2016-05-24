@@ -10,9 +10,9 @@
        #navbar.navbar-collapse.collapse.width
          ul.nav.navbar-nav
           li(ng-repeat="item in vm.items" class="trident-menu-item-{{item.name}}")
-            a(data-toggle="collapse" data-target=".navbar-collapse" ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)") {{item.label}}
+            a(ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)") {{item.label}}
 
          ul.nav.navbar-nav.navbar-right
           li(ng-repeat="about in vm.about")
-            a(data-toggle="collapse" data-target=".navbar-collapse" ng-link="['Static', {name: about.name}]" ng-click="vm.selectOption(about)")  {{about.label}}
+            a(ng-link="['Static', {name: about.name}]" ng-click="vm.selectOption(about)")  {{about.label}}
             
