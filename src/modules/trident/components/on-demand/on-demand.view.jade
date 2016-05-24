@@ -10,7 +10,7 @@ div.trident-separator
       .col-md-6
         ul.list-group.on-demand-menu
           li.list-group-item(ng-repeat="video in vm.selectedItem.videos" ng-link="['TridentVideo', {videoId: video.videoId}]")
-            a(ng-bind="video.name")
-            i.fa.pull-right.fa-chevron-right(aria-hidden="true")
+              a(ng-bind="video.name")
+              i.fa.fa-chevron-right.arrow-item(aria-hidden="true")
       
   ng-outlet
