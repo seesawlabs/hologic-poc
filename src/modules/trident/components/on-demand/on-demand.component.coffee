@@ -31,7 +31,58 @@ do (angular)->
         videoId: '164620633'
       ]
     ,
-      name: 'Patient'
+
+    name: 'Specimen'
+    videos: [
+      name: 'X-ray exposure control'
+      videoId: '164620633'
+    ,
+      name: 'Specimen preparation'
+      videoId: '164620633'
+    ,
+      name: 'Specimen imaging'
+      videoId: '164620633'
+    ,
+      name: 'Multi-specimen imaging (add procedure) *INTERACTIVE*'
+      videoId: '164620633'
+    ]
+
+    ,
+      name: 'Image Output'
+      videos: [
+        name: 'Sending images to configured destinations'
+        videoId: '164620633'
+      ,
+        name: 'Sending images on-demand (post-procedure) *INTERACTIVE*'
+        videoId: '164620633'
+      ,
+        name: 'Exporting images to USB or DVD'
+        videoId: '164620633'
+      ,
+        name: 'Printing images'
+        videoId: '164620633'
+      ,
+        name: 'Managing the image output queue'
+        videoId: '164620633'
+      ]
+    ,
+
+    name: 'Maintenance'
+    videos: [
+      name: 'Managing Alarms (NEW)'
+      videoId: '164620633'
+    ,
+      name: 'Performing a scheduled gain calibration *INTERACTIVE*'
+      videoId: '164620633'
+    ,
+      name: 'Cleaning the Trident system'
+      videoId: '164620633'
+    ,
+      name: 'Disinfecting the Trident system'
+      videoId: '164620633'
+    ]
+    ,
+      name: 'Patient Information'
       videos: [
         name: 'Selecting patients'
         videoId: '164620633'
@@ -54,21 +105,7 @@ do (angular)->
         name: 'Querying the worklist'
         videoId: '164620633'
       ]
-    ,
-      name: 'Specimen'
-      videos: [
-        name: 'X-ray exposure control'
-        videoId: '164620633'
-      ,
-        name: 'Specimen preparation'
-        videoId: '164620633'
-      ,
-        name: 'Specimen imaging'
-        videoId: '164620633'
-      ,
-        name: 'Multi-specimen imaging (add procedure) *INTERACTIVE*'
-        videoId: '164620633'
-      ]
+
     ,
       name: 'Image Review Tools'
       videos: [
@@ -102,41 +139,6 @@ do (angular)->
         name: 'Annotations (ellipse, ruler, poly, arrow, free-form text)'
         videoId: '164620633'
       ]
-
-    ,
-      name: 'Image Output'
-      videos: [
-        name: 'Sending images to configured destinations'
-        videoId: '164620633'
-      ,
-        name: 'Sending images on-demand (post-procedure) *INTERACTIVE*'
-        videoId: '164620633'
-      ,
-        name: 'Exporting images to USB or DVD'
-        videoId: '164620633'
-      ,
-        name: 'Printing images'
-        videoId: '164620633'
-      ,
-        name: 'Managing the image output queue'
-        videoId: '164620633'
-      ]
-
-      ,
-        name: 'Maintenance'
-        videos: [
-          name: 'Managing Alarms (NEW)'
-          videoId: '164620633'
-        ,
-          name: 'Performing a scheduled gain calibration *INTERACTIVE*'
-          videoId: '164620633'
-        ,
-          name: 'Cleaning the Trident system'
-          videoId: '164620633'
-        ,
-          name: 'Disinfecting the Trident system'
-          videoId: '164620633'
-        ]
 
       ,
         name: 'System Administration'
