@@ -7,7 +7,7 @@
            span.icon-bar
            span.icon-bar
            span.icon-bar
-       #navbar.navbar-collapse.collapse
+       #navbar.navbar-collapse.collapse.width
          ul.nav.navbar-nav
           li(ng-repeat="item in vm.items" class="trident-menu-item-{{item.name}}")
             a(ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)") {{item.label}}

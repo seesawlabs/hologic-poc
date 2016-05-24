@@ -1,15 +1,42 @@
 @import variables
 
 .#{$trident}menu
+
+  @media (max-width: 767px)
+    .navbar-nav
+      margin: 0
+      width: 200px
+    .navbar-collapse
+      padding: 0
+      white-space: nowrap
+      position: absolute
+      padding-top: 20px
+      top: 0px
+      max-height: 800px
+      height: 800px
+      border: 0px
+      background-color: rgba( #000, .9 )
+
+      &.width
+        overflow: hidden
+        -webkit-transition: width 0.35s ease
+        -moz-transition: width 0.35s ease
+        -o-transition: width 0.35s ease
+        transition: width 0.35s ease
+
+
   &.navbar
     border: 0px;
-  background-color: $main-menu
+    background-color: $main-menu
   .navbar-nav
     > li
       > a
         color: $colDefault
         &:hover, &:focus
           color: $colHighlight
+
+
+
 
 .#{$trident}menu-item-overview
   background-color: $overview
