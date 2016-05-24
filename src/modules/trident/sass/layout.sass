@@ -35,7 +35,7 @@ body
   .on-demand-menu
     .list-group-item
       background-color: #0097C7
-      margin-bottom: 2px
+      margin-bottom: 8px
       a
         font-size: 14px
         color: white
@@ -43,6 +43,10 @@ body
   .list-group-item
     background-color: transparent
     border: none
+    &:first-child
+      border-radius: 0
+    &:last-child
+      border-radius: 0
     a
       cursor: pointer
       font-size: 15px
