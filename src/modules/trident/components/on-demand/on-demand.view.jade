@@ -8,7 +8,7 @@ div.trident-separator
 div.container
     .on-demand
       .row
-        .on-demand-left.col-md-4.pull-left
+        .on-demand-left.col-md-3.pull-left
           ul.list-group.pull-left
             li.list-group-item(ng-repeat="item in vm.items | limitTo:4")
               a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
@@ -17,7 +17,7 @@ div.container
             li.list-group-item(ng-repeat="item in vm.items | limitTo:4:4")
               a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
           
-        .col-md-6.pull-left
+        .col-md-9.pull-left
           ul.list-group.on-demand-menu
             li.list-group-item(ng-repeat="video in vm.selectedItem.videos" ng-link="['TridentVideo', {videoId: video.videoId}]")
                 a(ng-bind="video.name")
