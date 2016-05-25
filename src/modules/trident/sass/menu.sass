@@ -33,11 +33,21 @@
     border: 0px
     background-color: $main-menu
   .navbar-nav
+    // Fixed to make it work with responsiveness.
+    &.navbar-right
+      > li
+        > a
+          padding-left: 10px
+          padding-right: 25px
     > li
       > a
+        font-size: 1.5rem
+        font-weight: 100
+        padding: 2rem 2.5rem
         color: $colDefault
         &:hover, &:focus
           color: $colHighlight
+
 
 
 
@@ -57,7 +67,19 @@
 
 .select-item
   position: absolute
-  top: 60px
+  top: 70px
   left: 0px
   height: 3px
   background-color: white
+
+
+.navbar-default
+  .navbar-toggle
+    float: left
+    border: none
+    &:hover
+      background-color: $main-menu
+    .icon-bar
+      width: 24px
+      height: 4px
+      background-color: #fff
