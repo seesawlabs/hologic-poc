@@ -1,5 +1,15 @@
 do (angular)->
 
+
+  addClass = () ->
+    restrict: 'A'
+    replace: true
+    link: (scope, element, attr)->
+      element.on 'click', ()->
+        jQuery('.list-group-item a').removeClass 'selected'
+        jQuery(element).addClass 'selected'
+
+
   selectOption = ($timeout) ->
     restrict: 'A'
     replace: true
@@ -39,3 +49,4 @@ do (angular)->
 
   angular.module 'trident'
     .directive 'selectOption', selectOption
+    .directive 'addClass', addClass

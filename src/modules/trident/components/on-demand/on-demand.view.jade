@@ -12,11 +12,11 @@
           .on-demand-left.col-md-3.pull-left
             ul.list-group.pull-left
               li.list-group-item(ng-repeat="item in vm.items | limitTo:4")
-                a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
+                a(ng-bind="item.name" add-class ng-click="vm.displayMenu(item)")
 
             ul.list-group.pull-left
               li.list-group-item(ng-repeat="item in vm.items | limitTo:4:4")
-                a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
+                a(ng-bind="item.name" add-class ng-click="vm.displayMenu(item)")
             
           .col-md-9.col-xs-12.pull-left
             ul.list-group.on-demand-menu
