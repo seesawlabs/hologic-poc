@@ -18,7 +18,7 @@
               li.list-group-item(ng-repeat="item in vm.items | limitTo:4:4")
                 a(ng-bind="item.name" ng-click="vm.displayMenu(item)")
             
-          .col-md-9.pull-left
+          .col-md-9.col-xs-12.pull-left
             ul.list-group.on-demand-menu
               li.list-group-item(ng-repeat="video in vm.selectedItem.videos" ng-link="['TridentVideo', {videoId: video.videoId}]")
                   a(ng-bind="video.name")
