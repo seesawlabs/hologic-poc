@@ -13,6 +13,6 @@
             a(ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)") {{item.label}}
 
          ul.nav.navbar-nav.navbar-right
-          li(ng-repeat="about in vm.about")
+          li(ng-repeat="about in vm.about" class="trident-menu-item-{{about.name}}")
             a(ng-link="['Static', {name: about.name}]" ng-click="vm.selectOption(about)")  {{about.label}}
             
