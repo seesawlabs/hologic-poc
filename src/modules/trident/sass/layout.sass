@@ -46,6 +46,7 @@ body
       text-align: right
 
 .on-demand
+  color: #fff
   .on-demand-menu
     .list-group-item
       background-color: #0097C7
@@ -113,15 +114,32 @@ h1
 .support
   color: #fff
   h2
-    color: #AEB1CD
     font-weight: 100
 
 
+.no-data-copy-bg, .no-data-copy-sm
+  text-align: center
+  width: 45%
+  margin: 0 auto
+  margin-top: 15%
+  font-size: 15pt
+  font-weight: 100
 
 @media (min-width: 990px)
   .horizontal-line
     border-right: 1px solid rgba( #fff, .2 )
+    left: 26%
     margin-top: 82px
-    left: 27%
     height: 100%
     position: absolute
+  .no-data-copy-bg
+    display: block
+  .no-data-copy-sm
+    display: none
+
+
+@media (max-width: 990px)
+  .no-data-copy-bg
+    display: none
+  .no-data-copy-sm
+    display: block
