@@ -11,6 +11,8 @@ do (angular)->
             videos = @items[item]['videos']
             @selectedVideo =  _.find videos, (video) =>
              return video.videoId is @videoId
+            if @selectedVideo
+              return 
 
 
     $routerOnActivate: (next, previous) =>
