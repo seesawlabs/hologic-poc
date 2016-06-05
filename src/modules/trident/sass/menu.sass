@@ -32,6 +32,7 @@
   &.navbar
     border: 0px
     background-color: $main-menu
+    min-height: 45px
   .navbar-nav
     // Fixed to make it work with responsiveness.
     &.navbar-right
@@ -41,9 +42,11 @@
           padding-right: 25px
     > li
       > a
+        width: 130px
+        height: 45px
         font-size: 1.5rem
         font-weight: 100
-        padding: 2rem 2.5rem
+        text-align: center
         color: $colDefault
         &:hover, &:focus
           color: $colHighlight
