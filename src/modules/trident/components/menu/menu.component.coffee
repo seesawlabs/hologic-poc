@@ -23,9 +23,6 @@ do (angular)->
     ,
       name: 'support'
       label: 'Support'
-    ,
-      name: 'help'
-      label: 'Help'
     ]
 
     getItems: ->
