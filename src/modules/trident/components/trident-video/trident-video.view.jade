@@ -8,3 +8,8 @@ div.container
     .col-md-12
       .embed-responsive.embed-responsive-16by9
         iframe.embed-responsive-item(ng-src="{{ vm.videoURL | trustAsResourceUrl }}" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
+      
+    .col-md-12
+      a(href="/#/view/on-demand").btn-trident.visible-xs 
+        i.fa.fa-chevron-left.arrow-item-left(aria-hidden="true")
+        span Return to On-Demand Menu

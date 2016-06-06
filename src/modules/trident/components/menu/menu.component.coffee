@@ -55,7 +55,6 @@ do (angular)->
       @mainmenu
         .getAbout()
         .then (@about)=>
-          console.log @about
 
     selectOption: (item)->
       @mainmenu.setSelectedOption(item)

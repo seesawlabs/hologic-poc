@@ -1,5 +1,4 @@
 @import variables
-@import url(https://fonts.googleapis.com/css?family=Montserrat)
 
 body, html
   height: 100%
@@ -7,10 +6,11 @@ body
   padding-top: 70px
   padding-bottom: 20px
   background-color: #fff
-  font-family: 'Montserrat', sans-serif
+  font-family: sans-serif
   background-repeat: no-repeat
   background-attachment: fixed
-  background-size: 100% 100%
+  background-size: cover
+  background-position: right
   &.#{$trident}administration
     background-image: url('/assets/img/bg-green.png')
   &.#{$trident}essentials
@@ -47,6 +47,24 @@ body
       padding-top: 38px
       text-align: right
 
+
+.btn-trident
+  border-radius: 0
+  margin-top: 20px
+  width: 100%
+  background-color: $on-demand-menu
+  color: #fff
+  text-align: left
+  padding: 10px
+  font-size: 19px
+  font-weight: 200
+  span
+    padding-left: 10px
+
+  &:hover
+    color: #fff
+
+
 .on-demand
   color: #fff
   .on-demand-menu
@@ -78,6 +96,8 @@ body
   position: absolute
   right: 10px
   font-size: 1.5em
+.arrow-item-left
+  font-size: 1.5em
 
 
 div#preload
@@ -93,6 +113,10 @@ div#preload
       color: $on-demand-menu
       font-style: italic
 
+
+.resources, .support
+  text-transform: uppercase
+  font-family: 'Montserrat'
 
 .resources
  color: #fff
