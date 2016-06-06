@@ -8,126 +8,70 @@ do (angular)->
         name: 'Basic unit components'
         videoId: '164620633'
       ,
-        name: 'X-ray cabinet component'
+        name: 'Cabinet Controls and Indicators'
         videoId: '164620633'
       ,
-        name: 'Cabinet controls and indicators'
+        name: 'C- Setting Up the Trident System'
         videoId: '164620633'
       ,
-        name: 'Setting up the Trident System'
+        name: 'X-ray Cabinet Components'
         videoId: '164620633'
-      ,
-        name: 'Multi-up Display'
-        videoId: '164620633'
-
       ]
     ,
       name: 'Login/Logout'
       videos: [
-        name: 'Logging in the Trident system'
+        name: 'Log in'
         videoId: '164620633'
       ,
-        name: 'Logging out the Trydent system'
+        name: 'Log out'
+        videoId: '164620633'
+      ,
+        name: 'System shutdown'
         videoId: '164620633'
       ]
-    ,
-
-    name: 'Specimen'
-    videos: [
-      name: 'X-ray exposure control'
-      videoId: '164620633'
-    ,
-      name: 'Specimen preparation'
-      videoId: '164620633'
-    ,
-      name: 'Specimen imaging'
-      videoId: '164620633'
-    ,
-      name: 'Multi-specimen imaging (add procedure) *INTERACTIVE*'
-      videoId: '164620633'
-    ]
-
-    ,
-      name: 'Image Output'
-      videos: [
-        name: 'Sending images to configured destinations'
-        videoId: '164620633'
-      ,
-        name: 'Sending images on-demand (post-procedure) *INTERACTIVE*'
-        videoId: '164620633'
-      ,
-        name: 'Exporting images to USB or DVD'
-        videoId: '164620633'
-      ,
-        name: 'Printing images'
-        videoId: '164620633'
-      ,
-        name: 'Managing the image output queue'
-        videoId: '164620633'
-      ]
-    ,
-
-    name: 'Maintenance'
-    videos: [
-      name: 'Managing Alarms (NEW)'
-      videoId: '164620633'
-    ,
-      name: 'Performing a scheduled gain calibration *INTERACTIVE*'
-      videoId: '164620633'
-    ,
-      name: 'Cleaning the Trident system'
-      videoId: '164620633'
-    ,
-      name: 'Disinfecting the Trident system'
-      videoId: '164620633'
-    ]
     ,
       name: 'Patient Information'
       videos: [
+        name: 'Adding new patients'
+        videoId: '164620633'
+      ,
+        name: 'Deleting Patients'
+        videoId: '164620633'
+      ,
+        name: 'Editing Patient Information'
+        videoId: '164620633'
+      ,
+        name: 'Querying the Worklist'
+        videoId: '164620633'
+      ,
+        name: 'Refreshing the Worklist'
+        videoId: '164620633'
+      ,
         name: 'Selecting patients'
         videoId: '164620633'
-      ,
-        name: 'Adding new patients *INTERACTIVE*'
-        videoId: '164620633'
-      ,
-        name: 'Editing patients'
-        videoId: '164620633'
-      ,
-        name: 'Deleting patients'
-        videoId: '164620633'
-      ,
-        name: 'Applying filters'
-        videoId: '164620633'
-      ,
-        name: 'Refreshing the worklist'
-        videoId: '164620633'
-      ,
-        name: 'Querying the worklist'
-        videoId: '164620633'
       ]
-
+    ,
+      name: 'Specimen'
+      videos: [
+        name: 'Multi-specimen Imaging'
+        videoId: '164620633'
+      ,
+        name: 'Specimen Imaging'
+        videoId: '164620633'
+      ,
+        name: 'Specimen Imaging Interruptions'
+        videoId: '164620633'
+      ,
+        name: 'Specimen Preparation'
+        videoId: '164620633'
+      ,
+        name: 'X-ray Exposure Control'
+        videoId: '164620633'
+     ]
     ,
       name: 'Image Review Tools'
       videos: [
-        name: 'Magnify and Zoom *INTERACTIVE*'
-        videoId: '164620633'
-      ,
-        name: 'Window/level (brightness and contrast)'
-        videoId: '164620633'
-      ,
-        name: 'Display (fit to viewport, view actual pixels, mirror, invert)'
-        videoId: '164620633'
-      ,
-        name: 'Multi-up display'
-        videoId: '164620633'
-      ,
-        name: 'Enhanced visualization (sharpness)'
-        videoId: '164620633'
-      ,
-        name: 'Ruler'
-        videoId: '164620633'
-      ,
-        name: 'Patient information'
+        name: 'Annotations'
         videoId: '164620633'
       ,
         name: 'Camera'
@@ -136,37 +80,100 @@ do (angular)->
         name: 'Comments'
         videoId: '164620633'
       ,
-        name: 'Annotations (ellipse, ruler, poly, arrow, free-form text)'
+        name: 'Display'
+        videoId: '164620633'
+      ,
+        name: 'Image Review Tools - Enhanced Visualization'
+        videoId: '164620633'
+      ,
+        name: 'Magnify and Zoom'
+        videoId: '164620633'
+      ,
+        name: 'Multi-up Display'
+        videoId: '164620633'
+      ,
+        name: 'Patient Information'
+        videoId: '164620633'
+      ,
+        name: 'Ruler'
+        videoId: '164620633'
+      ,
+        name: 'Window Level'
+        videoId: '164620633'
+     ]
+    ,
+      name: 'Image Output'
+      videos: [
+        name: 'Exporting Images to USB or DVD'
+        videoId: '164620633'
+      ,
+        name: 'Printing Images'
+        videoId: '164620633'
+      ,
+        name: 'Sending Images On Demand'
+        videoId: '164620633'
+      ,
+        name: 'Sending Images Post-Procedure'
+        videoId: '164620633'
+      ,
+        name: 'Sending to a Configured Destination'
+        videoId: '164620633'
+      ]
+    ,
+      name: 'Maintenance'
+      videos: [
+        name: 'Disinfecting the Trident System'
+        videoId: '164620633'
+      ,
+        name: 'General Cleaning'
+        videoId: '164620633'
+      ,
+        name: 'Keyboard Cleaning'
+        videoId: '164620633'
+      ,
+        name: 'Maintenance Using the Taskbar'
+        videoId: '164620633'
+      ,
+        name: 'Managing Alerts'
+        videoId: '164620633'
+      ,
+        name: 'Performing a Scheduled Gain Calibration'
+        videoId: '164620633'
+      ,
+        name: 'Workstation Cleaning'
         videoId: '164620633'
       ]
 
+    ,
+      name: 'System Administration'
+      videos: [
+        name: 'Displaying Additional Information'
+        videoId: '164620633'
       ,
-        name: 'System Administration'
-        videos: [
-          name: 'System Tools (Comments) *INTERACTIVE*'
-          videoId: '164620633'
-        ,
-          name: 'System Defaults (Manual vs. Auto KV mode)'
-          videoId: '164620633'
-        ,
-          name: 'Manage Operators (Add/Edit/Delete Operators)'
-          videoId: '164620633'
-        ,
-          name: 'My Settings'
-          videoId: '164620633'
-        ,
-          name: 'Gain Calibration'
-          videoId: '164620633'
-        ,
-          name: 'Procedure Editor (TBD)'
-          videoId: '164620633'
-        ,
-          name: 'Manage Output Groups (Add/Edit/Delete Output Groups)'
-          videoId: '164620633'
-        ,
-          name: 'Manage Patient Filters (NEW)'
-          videoId: '164620633'
-        ]
+        name: 'Gain Calibration'
+        videoId: '164620633'
+      ,
+        name: 'Manage Operators'
+        videoId: '164620633'
+      ,
+        name: 'Manage Output Groups'
+        videoId: '164620633'
+      ,
+        name: 'Manage Patient Filters'
+        videoId: '164620633'
+      ,
+        name: 'My Settings'
+        videoId: '164620633'
+      ,
+        name: 'Procedure Editor'
+        videoId: '164620633'
+      ,
+        name: 'System Defaults'
+        videoId: '164620633'
+      ,
+        name: 'System Tools'
+        videoId: '164620633'
+      ]
     ]
 
     getItems: ->
