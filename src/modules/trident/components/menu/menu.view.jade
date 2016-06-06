@@ -1,0 +1,17 @@
+.main-menu.row
+  nav.navbar.navbar-default.navbar-fixed-top.trident-menu(select-option) 
+       .navbar-header
+         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+           span.sr-only Toggle navigation
+           span.icon-bar
+           span.icon-bar
+           span.icon-bar
+       #navbar.navbar-collapse.collapse.width
+         ul.nav.navbar-nav
+          li(ng-repeat="item in vm.items" class="trident-menu-item-{{item.name}}")
+            a(ng-link="['Static', {name: item.name}]" ng-click="vm.selectOption(item)") {{item.label}}
+
+         ul.nav.navbar-nav.navbar-right
+          li(ng-repeat="about in vm.about" class="trident-menu-item-{{about.name}}")
+            a(ng-link="['Static', {name: about.name}]" ng-click="vm.selectOption(about)")  {{about.label}}
+            

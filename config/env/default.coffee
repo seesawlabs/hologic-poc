@@ -12,10 +12,17 @@ module.exports =
       ]
       '': [
         '/maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
+        '/maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'
       ]
     js:
       'vendor/bower': [
         'angular/angular.js'
         'angular-animate/angular-animate.js'
-        'angular-ui-router/release/angular-ui-router.js'
+        'angular-component-router/angular_1_router.js'
+        'angular-component-router/ng_route_shim.js'
+        'jquery/dist/jquery.min.js'
+      ]
+      '': [
+        '/maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
+        '/cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js'
       ]

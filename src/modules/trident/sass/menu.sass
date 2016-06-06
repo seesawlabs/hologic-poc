@@ -1,0 +1,88 @@
+@import variables
+
+.#{$trident}menu
+
+  @media (min-width: 767px)
+    #navbar
+      width: 100%!important
+
+  @media (max-width: 767px)
+    .navbar-nav
+      margin: 0
+      width: 200px
+    .navbar-collapse
+      padding: 0
+      white-space: nowrap
+      position: absolute
+      padding-top: 20px
+      top: 0px
+      max-height: 800px
+      height: 800px
+      border: 0px
+      background-color: rgba( #000, .9 )
+
+      &.width
+        overflow: hidden
+        -webkit-transition: width 0.35s ease
+        -moz-transition: width 0.35s ease
+        -o-transition: width 0.35s ease
+        transition: width 0.35s ease
+
+
+  &.navbar
+    border: 0px
+    background-color: $main-menu
+    min-height: 45px
+  .navbar-nav
+    // Fixed to make it work with responsiveness.
+    &.navbar-right
+      > li
+        > a
+          padding-left: 10px
+          padding-right: 25px
+    > li
+      > a
+        width: 130px
+        height: 45px
+        font-size: 1.5rem
+        font-weight: 100
+        text-align: center
+        color: $colDefault
+        &:hover, &:focus
+          color: $colHighlight
+
+
+
+
+
+.#{$trident}menu-item-overview
+  background-color: $overview
+
+.#{$trident}menu-item-essentials
+  background-color: $essentials
+
+.#{$trident}menu-item-administration
+  background-color: $administration
+
+.#{$trident}menu-item-on-demand
+  background-color: $on-demand
+
+
+.select-item
+  position: absolute
+  top: 55px
+  left: 0px
+  height: 2px
+  background-color: white
+
+
+.navbar-default
+  .navbar-toggle
+    float: left
+    border: none
+    &:hover
+      background-color: $main-menu
+    .icon-bar
+      width: 24px
+      height: 4px
+      background-color: #fff

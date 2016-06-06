@@ -1,10 +1,10 @@
 doctype html
-html(lang="en" ng-app="titan")
+html(lang="en" ng-app="trident")
   head
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-    link(rel="shortcut icon", href="#{config.favicon}")
+    //- link(rel="shortcut icon", href="#{config.favicon}")
 
     title=config.title
 
@@ -14,12 +14,21 @@ html(lang="en" ng-app="titan")
     each path in ['styles']
       link(href="css/#{path}#{cachebust}.css", rel="stylesheet")
       
-  body
-    h1.text-center Titan LMS Test
+  body(ng-app="titan")
+    app
+    each paths, base in config.dependencies.js
+      each path in paths
+        script(src="#{base}/#{path}")
+    each path in ['bundle', 'templates', 'env']
+        script(src="js/#{path}#{cachebust}.js")
+        
+    div(id="preload")
+     img(src="/assets/img/bg-green.png" width="1" height="1") 
+     img(src="/assets/img/bg-purple.png" width="1" height="1")
+     img(src="/assets/img/bg-yellow.png" width="1" height="1") 
+     img(src="/assets/img/bg-lightblue.png" width="1" height="1") 
+     img(src="/assets/img/bg-blue.png" width="1" height="1") 
     
-    .row
-      .col-sm-6.text-center
-        a.btn.btn-primary.btn-lg(href="index1.html") Video JavaScript Framework
-      .col-sm-6.text-center
-        a.btn.btn-primary.btn-lg(href="index2.html") Pure HTML/CSS
-      
+    if (env == 'local')
+      script
+        | document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')

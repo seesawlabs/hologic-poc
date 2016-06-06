@@ -1,0 +1,182 @@
+@import variables
+@import url(https://fonts.googleapis.com/css?family=Montserrat)
+
+body, html
+  height: 100%
+body
+  padding-top: 70px
+  padding-bottom: 20px
+  background-color: #fff
+  font-family: 'Montserrat', sans-serif
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: 100% 100%
+  &.#{$trident}administration
+    background-image: url('/assets/img/bg-green.png')
+  &.#{$trident}essentials
+    background-image: url('/assets/img/bg-purple.png')
+  &.#{$trident}overview
+    background-image: url('/assets/img/bg-yellow.png')
+  &.#{$trident}on-demand
+    background-image: url('/assets/img/bg-lightblue.png')
+  &.#{$trident}video
+    background-image: url('/assets/img/bg-lightblue.png')
+  &.#{$trident}resources
+    background-image: url('/assets/img/bg-blue.png')
+  &.#{$trident}help
+    background-image: url('/assets/img/bg-blue.png')
+  &.#{$trident}support
+    background-image: url('/assets/img/bg-blue.png')
+
+
+.#{$trident}separator
+  border-bottom: 2px solid #fff
+  color: #fff
+  width: 100%
+  overflow: hidden
+  margin-bottom: 10px
+
+  h1, p
+    padding-left: 8px
+  p
+    font-size: 15pt
+    font-weight: 100
+
+  @media (min-width: 990px)
+    p
+      padding-top: 38px
+      text-align: right
+
+.on-demand
+  color: #fff
+  .on-demand-menu
+    .list-group-item
+      background-color: $on-demand-menu
+      margin-bottom: 8px
+      a
+        font-size: 14px
+        color: white
+
+  .list-group-item
+    background-color: transparent
+    border: none
+    &:first-child
+      border-radius: 0
+    &:last-child
+      border-radius: 0
+    a
+      cursor: pointer
+      font-size: 15px
+      color: #fff
+      text-transform: uppercase
+
+
+.fa-chevron-right
+  color: white
+
+.arrow-item
+  position: absolute
+  right: 10px
+  font-size: 1.5em
+
+
+div#preload
+ display: none
+
+
+.on-demand-left
+  .list-group
+    margin-bottom: 0px
+  .list-group-item
+    padding: 10px 8px
+    a.selected
+      color: $on-demand-menu
+      font-style: italic
+
+
+.resources
+ color: #fff
+ h3
+  white-space: nowrap
+ p
+  font-size: 11px
+ a
+  color: #fff
+  cursor: pointer
+  text-transform: uppercase
+ img
+  width: 150px
+  height: 200px
+ .info-resource
+    width: 25%
+    height: 250px
+
+
+h1
+  font-size: 35pt
+  font-weight: 100
+
+.support
+  color: #fff
+  .row
+    margin-bottom: 40px
+  h2
+    font-weight: 100
+
+
+.no-data-copy-bg, .no-data-copy-sm
+  text-align: center
+  width: 45%
+  margin: 0 auto
+  margin-top: 15%
+  font-size: 15pt
+  font-weight: 100
+
+.home-shadow
+  background: url("../assets/img/shadow1.png") top left repeat-x
+  position: absolute
+  top: 50%
+  left: 0
+  width: 100%
+  height: 110px
+
+.home
+  .home-main-img
+    max-height: 500px
+
+  .home-title
+    &.copy-main
+      margin-top: 25%
+    margin-top: 40px
+    h1, h2, h3
+      color: #161F6C
+    .no-spacing
+      margin: 0
+
+
+@media (min-width: 990px)
+  .horizontal-line
+    border-right: 2px solid #fff
+    left: 26%
+    margin-top: 82px
+    height: 100%
+    position: absolute
+  .no-data-copy-bg
+    display: block
+  .no-data-copy-sm
+    display: none
+
+
+@media (max-width: 990px)
+  .no-data-copy-bg
+    display: none
+  .no-data-copy-sm
+    display: block
+
+@media (max-width: 500px)
+  .home
+    .home-title
+        h1
+          font-size: 23pt
+        h3
+          font-size: 15pt
