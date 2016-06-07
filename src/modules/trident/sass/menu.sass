@@ -2,33 +2,6 @@
 
 .#{$trident}menu
 
-  @media (min-width: 767px)
-    #navbar
-      width: 100%!important
-
-  @media (max-width: 767px)
-    .navbar-nav
-      margin: 0
-      width: 200px
-    .navbar-collapse
-      padding: 0
-      white-space: nowrap
-      position: absolute
-      padding-top: 20px
-      top: 0px
-      max-height: 800px
-      height: 800px
-      border: 0px
-      background-color: rgba( #000, .9 )
-
-      &.width
-        overflow: hidden
-        -webkit-transition: width 0.35s ease
-        -moz-transition: width 0.35s ease
-        -o-transition: width 0.35s ease
-        transition: width 0.35s ease
-
-
   &.navbar
     border: 0px
     background-color: $main-menu
@@ -52,6 +25,35 @@
           color: $colHighlight
 
 
+  @media (min-width: 767px)
+    #navbar
+      width: 100%!important
+
+  @media (max-width: 767px)
+    .navbar-nav
+      margin: 0
+      width: 200px
+      > li
+        > a
+          text-align: left
+          font-size: 1.5rem
+    .navbar-collapse
+      padding: 0
+      white-space: nowrap
+      position: absolute
+      padding-top: 20px
+      top: 0px
+      max-height: 800px
+      height: 800px
+      border: 0px
+      background-color: rgba( #000, .9 )
+
+      &.width
+        overflow: hidden
+        -webkit-transition: width 0.35s ease
+        -moz-transition: width 0.35s ease
+        -o-transition: width 0.35s ease
+        transition: width 0.35s ease
 
 
 
