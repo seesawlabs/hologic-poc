@@ -14,7 +14,7 @@ do (angular)->
       label: 'Administration'
     ,
       name: 'on-demand'
-      label: 'On Demand'
+      label: 'On-Demand'
     ]
 
     about: [
