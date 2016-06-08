@@ -20,10 +20,10 @@ do (angular)->
     ,
       name: 'Login/Logout'
       videos: [
-        name: 'Log in'
+        name: 'Login'
         videoId: '164620633'
       ,
-        name: 'Log out'
+        name: 'Logout'
         videoId: '164620633'
       ,
         name: 'System shutdown'
