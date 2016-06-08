@@ -122,7 +122,7 @@ do (angular)->
     ,
       name: 'Maintenance'
       videos: [
-        name: 'Disinfecting the Trident System'
+        name: 'Disinfecting the Trident&trade; System'
         videoId: '164620633'
       ,
         name: 'General Cleaning'
