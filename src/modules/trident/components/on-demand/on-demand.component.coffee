@@ -11,7 +11,7 @@ do (angular)->
         name: 'Cabinet Controls and Indicators'
         videoId: '164620633'
       ,
-        name: 'Setting Up the Trident System'
+        name: 'Setting Up the Trident&trade; System'
         videoId: '164620633'
       ,
         name: 'X-ray Cabinet Components'
