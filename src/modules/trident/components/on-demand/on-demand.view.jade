@@ -21,7 +21,7 @@
           .col-md-8.col-xs-12.pull-left
             ul.list-group.on-demand-menu
               li.list-group-item(ng-repeat="video in vm.selectedItem.videos" ng-link="['TridentVideo', {videoId: video.videoId}]")
-                  a(ng-bind="video.name")
+                  a(ng-bind-html="video.name | trustAsHtml")
                   i.fa.fa-chevron-right.arrow-item(aria-hidden="true")
                   
             .no-data-copy-bg(ng-if="!vm.selectedItem.videos") Click or tap a category on the left to reveal corresponding lessons here.
