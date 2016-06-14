@@ -2,7 +2,7 @@ div.trident-separator
   div.container
     .row
       .col-md-12
-        h1 {{vm.selectedVideo.name}}
+        h1(ng-bind-html="vm.selectedVideo.name | trustAsHtml")
 div.container
   .row
     .col-md-12
