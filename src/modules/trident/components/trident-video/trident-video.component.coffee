@@ -17,7 +17,7 @@ do (angular)->
 
     $routerOnActivate: (next, previous) =>
       @videoId = next.params.videoId
-      @videoURL = "https://player.vimeo.com/video/#{@videoId}"
+      @videoURL = "https://player.vimeo.com/video/#{@videoId}?autoplay=1"
 
   angular.module 'trident'
     .component 'tridentVideo',
