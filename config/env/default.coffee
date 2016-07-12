@@ -25,4 +25,7 @@ module.exports =
       '': [
         '/maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
         '/cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js'
+        '/cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js'
+        '/cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js'
+        '/npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js'
       ]
