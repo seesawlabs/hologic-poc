@@ -71,7 +71,7 @@ gulp.task 'scorm', (done)->
   scormPackage
     version: '1.2'
     organization: 'Hologic'
-    title: 'Titan Manual Proof of Concept'
+    title: 'Trident System Virtual On-Demand Training Program'
     identifier: '00'
     masteryScore: 80
     source: './public'

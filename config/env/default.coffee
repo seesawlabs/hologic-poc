@@ -1,14 +1,14 @@
 'use strict'
 
 module.exports =
-  title: 'swingset'
+  title: 'Trident System Virtual On-Demand Training Program'
   port: 8000
 
   dependencies:
     css:
       # Insert bower or other CSS dependencies here
       'vendor/bower': [
-        'animate.css/animate.css'
+        'animate.css/animate.min.css'
       ]
       '': [
         '/maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'

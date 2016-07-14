@@ -1,4 +1,4 @@
 'use strict'
 
 module.exports =
-  title: 'swingset - DEV'
+  title: 'Trident System Virtual On-Demand Training Program'
