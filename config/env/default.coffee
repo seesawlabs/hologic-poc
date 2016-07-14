@@ -16,8 +16,8 @@ module.exports =
       ]
     js:
       'vendor/bower': [
-        'angular/angular.js'
-        'angular-animate/angular-animate.js'
+        'angular/angular.min.js'
+        'angular-animate/angular-animate.min.js'
         'angular-component-router/angular_1_router.js'
         'angular-component-router/ng_route_shim.js'
         'jquery/dist/jquery.min.js'
